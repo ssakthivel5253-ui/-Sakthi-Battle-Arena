@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Sakthi Battle Arena</title>
+<meta name="theme-color" content="#101820">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div id="pad"></div><div id="jb"><div id="jk"></div></div>
+<div class="top"><div><div id="hpt">HP 100</div><div id="hp"><div id="hpf"></div></div></div><div id="info"></div><div id="zt"></div></div>
+<div id="ch"></div><div id="ammo"></div><div id="warn"></div><div id="dmg"></div>
+<div class="b" id="sh">FIRE</div><div class="b" id="ai">AIM</div><div class="b" id="rl">RELOAD</div><div class="b" id="sw">SWAP</div>
+<div id="scr"><h1>SAKTHI BATTLE ARENA</h1><p id="sp">Be the last one standing. Left thumb: move. Right thumb: look. Stay inside the blue zone, grab yellow ammo and red medkits.<br>Landscape works best.</p><button id="go">PLAY</button></div>
+<!-- three.js: local copy first (works offline), CDN only as a fallback while online -->
+<script src="three.min.js"></script>
+<script>window.THREE||document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>')</script>
+<script src="game.js"></script>
+<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))</script>
+</body></html>
